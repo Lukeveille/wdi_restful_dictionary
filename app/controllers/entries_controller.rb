@@ -10,4 +10,12 @@ class EntriesController < ApplicationController
   def destroy
     redirect_to entries_url
   end
+
+  def index
+    @entries = Entry.all
+  end
+
+  def show
+    @entry = Entry.find(params[:id])
+  end
 end

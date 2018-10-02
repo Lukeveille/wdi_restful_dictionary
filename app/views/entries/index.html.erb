@@ -1,1 +1,9 @@
 <h1>This is the index page</h1>
+
+<ul>
+  <% @entries.each do |entry| %>
+    <li>
+      <%= link_to entry.word, entry_path(entry) %>
+    </li>
+  <% end %>
+</ul>

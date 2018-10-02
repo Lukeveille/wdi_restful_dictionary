@@ -1,3 +1,5 @@
-<h1>Show me!</h1>
+<h1><%= @entry.word %></h1>
 
-<p>This page will display information about entry number <%= params[:id] %></p>
+<p><%= @entry.definition %></p>
+
+<p>Language: <%= @entry.language %>
